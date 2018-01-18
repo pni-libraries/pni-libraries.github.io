@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:pni="http:///schemas/pni/_RufBkPttEeeSA4hvtyEL3A/3" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/pni/_RufBkPttEeeSA4hvtyEL3A/3 models.profile.uml#_RufBkfttEeeSA4hvtyEL3A">
+  <uml:Model xmi:id="_sJjPUPtmEeeSA4hvtyEL3A" name="pni">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_saVdUPtmEeeSA4hvtyEL3A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0qMasPtmEeeSA4hvtyEL3A" name="dependencies">
+      <packagedElement xmi:type="uml:Component" xmi:id="_5UxTcPtmEeeSA4hvtyEL3A" name="zlib"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="__sts8PtmEeeSA4hvtyEL3A" name="hdf5">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_2e6XQPt_EeeSA4hvtyEL3A" client="__sts8PtmEeeSA4hvtyEL3A" supplier="_5UxTcPtmEeeSA4hvtyEL3A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_7o9joPtmEeeSA4hvtyEL3A" name="Boost">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_oFYs8Pt_EeeSA4hvtyEL3A" client="_7o9joPtmEeeSA4hvtyEL3A" supplier="_9BAUoPtmEeeSA4hvtyEL3A"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_pUQ64Pt_EeeSA4hvtyEL3A" client="_7o9joPtmEeeSA4hvtyEL3A" supplier="_5UxTcPtmEeeSA4hvtyEL3A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_9BAUoPtmEeeSA4hvtyEL3A" name="bzip2"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_C_ByQPtnEeeSA4hvtyEL3A" name="gtest"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_Fq0qIPtnEeeSA4hvtyEL3A" name="h5cpp">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_86_p4Pt_EeeSA4hvtyEL3A" client="_Fq0qIPtnEeeSA4hvtyEL3A" supplier="_C_ByQPtnEeeSA4hvtyEL3A"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_9ZC30Pt_EeeSA4hvtyEL3A" client="_Fq0qIPtnEeeSA4hvtyEL3A" supplier="__sts8PtmEeeSA4hvtyEL3A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2jF2APtmEeeSA4hvtyEL3A" name="services">
+      <packagedElement xmi:type="uml:Component" xmi:id="_TFz7sPt_EeeSA4hvtyEL3A" name="GitHub"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_Yd-TMPt_EeeSA4hvtyEL3A" name="Dockerhub"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_U6LqEPuEEeeSA4hvtyEL3A" name="TravisCI"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_e8ZV4PuEEeeSA4hvtyEL3A" name="Appveyor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Jl9qAPtnEeeSA4hvtyEL3A" name="libraries">
+      <packagedElement xmi:type="uml:Component" xmi:id="_tqRuUPt-EeeSA4hvtyEL3A" name="pnicore">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="__bNj4Pt_EeeSA4hvtyEL3A" client="_tqRuUPt-EeeSA4hvtyEL3A" supplier="_7o9joPtmEeeSA4hvtyEL3A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_xIaCEPt-EeeSA4hvtyEL3A" name="pniio">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Bv5jUPuAEeeSA4hvtyEL3A" client="_xIaCEPt-EeeSA4hvtyEL3A" supplier="_Fq0qIPtnEeeSA4hvtyEL3A"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_C1VhYPuAEeeSA4hvtyEL3A" client="_xIaCEPt-EeeSA4hvtyEL3A" supplier="_tqRuUPt-EeeSA4hvtyEL3A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_1ErDUPt-EeeSA4hvtyEL3A" name="python-pni"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_PrSCcPtnEeeSA4hvtyEL3A" name="applications">
+      <packagedElement xmi:type="uml:Component" xmi:id="_5q95APt-EeeSA4hvtyEL3A" name="pnitools"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jWil8PuEEeeSA4hvtyEL3A" name="repositories">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_qUDxsPuEEeeSA4hvtyEL3A" name="pnicore" classifier="_LhMsAPuFEeeSA4hvtyEL3A"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_LhMsAPuFEeeSA4hvtyEL3A" name="GitRepository"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8C10gPtsEeeSA4hvtyEL3A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VKKeQPttEeeSA4hvtyEL3A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VKKeQfttEeeSA4hvtyEL3A" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VKKeQvttEeeSA4hvtyEL3A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VKKeQ_ttEeeSA4hvtyEL3A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VKKeRPttEeeSA4hvtyEL3A" key="Date" value="2018-01-17"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VKKeRfttEeeSA4hvtyEL3A" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8C3CoPtsEeeSA4hvtyEL3A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="models.profile.uml#_RufBkfttEeeSA4hvtyEL3A"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="models.profile.uml#_Rm3okPtrEeeSA4hvtyEL3A"/>
+    </profileApplication>
+  </uml:Model>
+  <pni:Library xmi:id="_ADNSoPttEeeSA4hvtyEL3A" base_Component="_5UxTcPtmEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_IQigcPttEeeSA4hvtyEL3A" base_Component="__sts8PtmEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_K2cywPttEeeSA4hvtyEL3A" base_Component="_7o9joPtmEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_L4XiwPttEeeSA4hvtyEL3A" base_Component="_9BAUoPtmEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_YNLjUPttEeeSA4hvtyEL3A" base_Component="_C_ByQPtnEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_ZUfJoPttEeeSA4hvtyEL3A" base_Component="_Fq0qIPtnEeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_wiyMgPt-EeeSA4hvtyEL3A" base_Component="_tqRuUPt-EeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_zGF2wPt-EeeSA4hvtyEL3A" base_Component="_xIaCEPt-EeeSA4hvtyEL3A"/>
+  <pni:Library xmi:id="_22jQoPt-EeeSA4hvtyEL3A" base_Component="_1ErDUPt-EeeSA4hvtyEL3A"/>
+  <pni:Service xmi:id="_aCyU4Pt_EeeSA4hvtyEL3A" base_Component="_Yd-TMPt_EeeSA4hvtyEL3A"/>
+  <pni:Service xmi:id="_bAn2IPt_EeeSA4hvtyEL3A" base_Component="_TFz7sPt_EeeSA4hvtyEL3A"/>
+  <pni:Service xmi:id="_Wkl9cPuEEeeSA4hvtyEL3A" base_Component="_U6LqEPuEEeeSA4hvtyEL3A"/>
+  <pni:Service xmi:id="_ggyg0PuEEeeSA4hvtyEL3A" base_Component="_e8ZV4PuEEeeSA4hvtyEL3A"/>
+</xmi:XMI>
